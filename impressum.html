@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cold Trail</title>
+
+<style>
+@view-transition { navigation: auto; }
+:root { color-scheme: dark; --grund: #0f0d0c; --text: #ece3d3; --blass: #a89c89; --gold: #e0bd62; --linie: rgba(236, 227, 211, .12); }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--grund); color: var(--text); font: 400 16px/1.55 "Barlow", "Helvetica Neue", Arial, sans-serif;
+  padding: calc(env(safe-area-inset-top, 0px) + 12px) max(18px, env(safe-area-inset-right, 0px)) calc(env(safe-area-inset-bottom, 0px) + 40px) max(18px, env(safe-area-inset-left, 0px)); }
+main { max-width: 680px; margin: 0 auto; }
+.zurueck { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; color: var(--gold); text-decoration: none; font: 600 1rem "Barlow Condensed", Arial, sans-serif; letter-spacing: .1em; text-transform: uppercase; }
+h1 { margin: 10px 0 18px; font: 700 2rem/1.05 "Barlow Condensed", Arial, sans-serif; text-transform: uppercase; letter-spacing: .02em; }
+h2 { margin: 26px 0 6px; font: 600 1.15rem/1.2 "Barlow Condensed", Arial, sans-serif; color: var(--gold); text-transform: uppercase; letter-spacing: .08em; }
+p, li { color: #d8cfbf; max-width: 65ch; } p { margin: 0 0 10px; }
+.offen { padding: 12px 14px; border-radius: 10px; background: #6e1d16; color: #fff; }
+.stand { margin-top: 30px; color: var(--blass); font-size: .85rem; }
+.nav{margin:6px 0 10px;font:600 .95rem 'Barlow Condensed',Arial,sans-serif;letter-spacing:.06em;color:var(--blass)} .nav a{color:var(--gold);text-decoration:none}
+</style>
+</head>
+<body>
+<main>
+<nav class="nav"><a href="index.html">Cold Trail</a> · <a href="datenschutz.html"><span data-de>Datenschutz</span><span data-en>Privacy</span></a> · <a href="impressum.html"><span data-de>Impressum</span><span data-en>Legal notice</span></a> · <a href="nutzungsbedingungen.html"><span data-de>Nutzung</span><span data-en>Terms</span></a></nav>
+<div data-de><h1>Impressum</h1>
+<h2>Angaben gemäß § 5 DDG</h2><p>Simon Zemelka<br>Auf der Wilbe 29a<br>44651 Herne</p>
+<h2>Kontakt</h2><p>E-Mail: zemelkasimon@gmail.com</p>
+<h2>Verantwortlich für den Inhalt</h2><p>Simon Zemelka<br>Auf der Wilbe 29a<br>44651 Herne</p>
+<h2>Umsatzsteuer</h2><p>Kleinunternehmer gemäß § 19 UStG, daher wird keine Umsatzsteuer ausgewiesen.</p>
+<h2>Verbraucherstreitbeilegung</h2><p>Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+<h2>Hinweis</h2><p>Alle Fälle, Personen, Orte, Firmen und Behörden in Cold Trail sind frei erfunden. Ähnlichkeiten mit echten Personen oder Ereignissen sind zufällig.</p></div>
+<div data-en lang="en"><h1>Legal notice</h1>
+<h2>Provider (§ 5 DDG, Germany)</h2><p>Simon Zemelka<br>Auf der Wilbe 29a<br>44651 Herne</p>
+<h2>Contact</h2><p>Email: zemelkasimon@gmail.com</p>
+<h2>VAT</h2><p>Small business under § 19 of the German VAT Act (UStG); no VAT is shown.</p>
+<h2>Consumer dispute resolution</h2><p>We are neither willing nor obliged to take part in dispute resolution proceedings before a consumer arbitration board.</p>
+<h2>Note</h2><p>All cases, people, places, companies and authorities in Cold Trail are entirely fictional. Any resemblance to real persons or events is coincidental.</p></div>
+</main>
+<script>
+var s = "de"; try { s = ((navigator.language || "de").toLowerCase().indexOf("de") === 0 ? "de" : "en"); } catch (e) {}
+document.documentElement.lang = s;
+document.querySelectorAll(s === "de" ? "[data-en]" : "[data-de]").forEach(function (e) { e.hidden = true; });
+</script>
+</body>
+</html>
